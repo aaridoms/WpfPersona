@@ -74,19 +74,11 @@ namespace WpfAppPersona
             set => altura = value;
         }
 
-        public int CompareTo(object obj)
-        {
-            if (obj is Persona)
-            {
-                return (obj as Persona).Altura.CompareTo(this.Altura);
-
-            }
-            throw new ArgumentException("El objeto no es una Persona");
-        }
-
+        // ToString para la impresión de los datos.
         public override string ToString()
         {
             return
+                "-----------------------" + "\n" + 
                 "DNI =" + dni + "\n" +
                 "Nombre =" + nombre + "\n" +
                 "Apellidos =" + apellidos + "\n" +

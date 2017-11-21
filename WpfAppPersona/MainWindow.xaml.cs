@@ -27,14 +27,14 @@ namespace WpfAppPersona
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            // Se abre una ventana nueva para la creación de personas.
+            // Botón utilizado para abrir la ventana de creacion de personas.
             Window1 w = new Window1();
             w.Show();
         }
 
         private void salir_Click(object sender, RoutedEventArgs e)
         {
-            // Metodo para salir de la aplicación.
+            // Botón para salir de la aplicación.
             MainWindow w = new MainWindow();
             MessageBox.Show("Gracias por usar el programa :)");
             this.Close();
@@ -42,7 +42,7 @@ namespace WpfAppPersona
 
         private void menu2_Click(object sender, RoutedEventArgs e)
         {
-            // Método para consultar la persona.
+            // Botón utilizado para abrir la ventana de consulta.
             Window2 w = new Window2();
             w.Show();
         }

@@ -24,6 +24,7 @@ namespace WpfAppPersona
             InitializeComponent();
         }
 
+        // Botón utilizado para insertar en el Arraylist la persona añadida.
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string dni;
@@ -35,7 +36,7 @@ namespace WpfAppPersona
             double altura;
 
             dni = txtdni.Text;
-
+            
             nombre = txtnombre.Text;
             apellidos = txtapellidos.Text;
 
@@ -48,7 +49,7 @@ namespace WpfAppPersona
                 sexo = "Mujer";
             }
 
-            fechaNacimiento = txtfecha.Text;
+            fechaNacimiento = date1.Text;
             peso = Convert.ToDouble(txtpeso.Text);
             altura = Convert.ToDouble(txtaltura.Text);
 

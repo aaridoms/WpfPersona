@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 namespace WpfAppPersona
 {
     public static class ListaPersona
-    {
+    {   
+        // Creamos un ArrayList en el que irá guardada la información de las personas.
         public static List<Persona> personas = new List<Persona>();
 
 

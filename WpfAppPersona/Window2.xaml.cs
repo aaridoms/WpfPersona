@@ -24,11 +24,14 @@ namespace WpfAppPersona
             InitializeComponent();
         }
 
+        // Botón utilizado para para cerrar la ventana de consulta de personas.
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
+
+        // Botón utilizado para imprimir en un textBlock todas las personas añadidas anteriormente.
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
             for (int i = 0; i < ListaPersona.personas.Count; i++)
@@ -37,6 +40,7 @@ namespace WpfAppPersona
             }
         }
 
+        // Botón utilizado para buscar una persona introduciendo su DNI, si no encuentra la persona nos dará un mensaje de error.
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
         
@@ -53,6 +57,7 @@ namespace WpfAppPersona
             }
         }
 
+        // Botón utilizado para imprimir en un textBlock la persona que mas pese. 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
             
@@ -72,6 +77,7 @@ namespace WpfAppPersona
             txt1.Text = persona.ToString();
         }
 
+        // Botón utilizado para imprimir en un textBlock la persona más baja.
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
          
@@ -89,11 +95,6 @@ namespace WpfAppPersona
             }
 
             txt1.Text = persona.ToString();
-        }
-
-        private void btn6_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("El campo ha sido limpiado.");
         }
     }
 }

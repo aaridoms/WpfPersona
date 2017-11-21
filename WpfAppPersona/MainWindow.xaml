@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfAppPersona.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppPersona"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <DockPanel Background="#5C6BC0">
+            <Menu DockPanel.Dock="Top" BorderBrush="#FFF1F1" Background="#5C6BC0" >
+                <MenuItem Header="_Menu" Width="62" FontSize="18" Background="#1A237E" Foreground="#9FA8DA">
+                    <MenuItem x:Name="menu1" Header="_Nueva Persona" Click="MenuItem_Click" Foreground="#1A237E"/>
+                    <MenuItem x:Name="menu2" Header="_Buscar Persona" Foreground="#1A237E" Click="menu2_Click"/>
+                    <Separator/>
+                    <MenuItem x:Name="salir" Header="_Salir" Foreground="#1A237E" Click="salir_Click"/>
+                </MenuItem>
+            </Menu>
+            <Image Source="C:\Users\angad\Desktop\imagen2.png" Margin="191,-1,192,0" Width="134" RenderTransformOrigin="0.5,0.5" DockPanel.Dock="Top" Height="189">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.032"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="angel.arias.dominguez@alumnos.fesac.es" Height="31" Width="250" DockPanel.Dock="Bottom" FontWeight="Bold"/>
+            <Label Content="https://github.com/aaridoms" Height="31" Width="250" DockPanel.Dock="Bottom" FontWeight="Normal"/>
+        </DockPanel>
+    </Grid>
+</Window>
